@@ -1,0 +1,135 @@
+$position: absolute;
+
+@mixin bodyp2 {
+    width: 941px;
+    height: 1260px;
+    left: 213px;
+    top: 1680px;
+}
+
+@mixin h3 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+
+@mixin span {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #356EAD;
+}
+
+@mixin artb2 {
+    color: #356EAD;
+    opacity: 0.8;
+    letter-spacing: 0.04em;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+@mixin artbd2 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@mixin imggrid {
+    grid-row-start: 1;
+    grid-row-end: 6;   
+}
+
+@mixin imgcol {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(377px, 1fr));
+    grid-column-gap: 10px;
+}
+
+.bodyp2 {
+    position: $position;
+    @include bodyp2();
+
+    .artb2 {
+        @include artb2()
+    }
+}
+
+h3 {
+    @include h3();
+}
+
+.artbd2 {
+    @include artbd2()
+}
+
+.ima4 {
+    @include imgcol();
+ }
+
+.img4 {
+    @include imggrid();
+}
+
+.ima5 {
+    @include imgcol();
+ }
+
+.img5 {
+    @include imggrid();
+}
+
+.ima6 {
+    @include imgcol();
+ }
+
+.img6 {
+    @include imggrid();
+}
+
+.ima7 {
+    @include imgcol();
+ }
+
+.img7 {
+    @include imggrid();
+}
+
+.ima8 {
+    @include imgcol();
+ }
+
+.img8 {
+    @include imggrid();
+}
+
+.barrafinal2 {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    align-content: space-between;
+    justify-content: space-between;
+
+    span {
+        @include span();
+    }
+}
+
+.npst {
+    align-content: right;
+    justify-content: right;
+    left: 100px;
+}

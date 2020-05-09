@@ -1,0 +1,149 @@
+$position: absolute;
+
+@mixin barrab {
+    width: 940px;
+    height: 36px;
+    left: 213px;
+    top: 475px;
+
+    background: #F4F4F4;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+}
+
+@mixin bodyp1 {
+    width: 941px;
+    height: 1044px;
+    left: 213px;
+    top: 548px;
+}
+
+@mixin popular {
+    width: 103px;
+    height: 23px;
+    left: 0px;
+    top: 8px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    letter-spacing: 0.04em;
+
+    color: #356EAD;
+    opacity: 0.8;
+}
+
+@mixin article {
+    letter-spacing: 0.04em;
+    color: grey;
+    line-height: 26px;
+    
+}
+
+
+
+.barrabuscar {
+    position: $position;
+    @include barrab()
+}
+
+.boton {
+    background: #F4F4F4;
+}
+
+.bodyp1 {
+    position: $position;
+    @include bodyp1();
+}
+
+
+.bodyp1h2 {
+    position: $position;
+    @include popular();
+}
+
+article {
+    @include article();
+}
+
+.ima1{
+    position: $position;
+    top: 63px;
+    width: 941px;
+    display: grid;
+    grid-template-columns: 1fr 1fr, minmax(314px, 1fr);
+    grid-template-rows: 50px 50px;
+    grid-column-gap: 10px;
+
+    h2 {
+        font-size: 36px;
+        line-height: 46px;
+        color: #1F3F68;
+    }
+}
+
+.img1 {
+    grid-column-start: 2;
+    grid-column-end: 3;    
+}
+
+.p2body1{
+    position: $position;
+    top: 540px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-column-gap: 50px;
+
+    h2 {
+        font-size: 22px;
+        line-height: 32px;
+        color: #1F3F68;
+    }
+
+}
+
+.mfbody1 {
+    position: relative;
+    display: grid;
+    justify-content: end;
+    top: 1044px;
+    color: #356EAD;
+    opacity: 0.8;
+}
+
+.bodyfooter {
+
+    &_div {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+    }
+
+    &_ele1 {
+        justify-content: space-between;
+    }
+
+    &_span {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        opacity: 0.4;
+    }
+
+}

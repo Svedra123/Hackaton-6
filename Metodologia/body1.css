@@ -1,0 +1,135 @@
+.barrabuscar {
+  position: absolute;
+  width: 940px;
+  height: 36px;
+  left: 213px;
+  top: 475px;
+  background: #F4F4F4;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr;
+      grid-template-columns: 20px 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-column-gap: 10px;
+}
+
+.boton {
+  background: #F4F4F4;
+}
+
+.bodyp1 {
+  position: absolute;
+  width: 941px;
+  height: 1044px;
+  left: 213px;
+  top: 548px;
+}
+
+.bodyp1h2 {
+  position: absolute;
+  width: 103px;
+  height: 23px;
+  left: 0px;
+  top: 8px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  color: #356EAD;
+  opacity: 0.8;
+}
+
+article {
+  letter-spacing: 0.04em;
+  color: grey;
+  line-height: 26px;
+}
+
+.ima1 {
+  position: absolute;
+  top: 63px;
+  width: 941px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr, minmax(314px, 1fr);
+      grid-template-columns: 1fr 1fr, minmax(314px, 1fr);
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
+  grid-column-gap: 10px;
+}
+
+.ima1 h2 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #1F3F68;
+}
+
+.img1 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.p2body1 {
+  position: absolute;
+  top: 540px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+  grid-column-gap: 50px;
+}
+
+.p2body1 h2 {
+  font-size: 22px;
+  line-height: 32px;
+  color: #1F3F68;
+}
+
+.mfbody1 {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  top: 1044px;
+  color: #356EAD;
+  opacity: 0.8;
+}
+
+.bodyfooter_div {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+}
+
+.bodyfooter_ele1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bodyfooter_span {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  opacity: 0.4;
+}
+/*# sourceMappingURL=body1.css.map */
